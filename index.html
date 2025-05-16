@@ -62,15 +62,24 @@
     <div class="container position-relative z-10">
       <div class="row align-items-center">
         <div class="col-12 col-md-5 d-flex justify-content-center align-items-center mb-6 mb-md-0">
-          <img src="images/image.jpeg" alt="Photo de Laije Belthassar" class="profile-photo rounded-xl shadow-lg w-48 h-48 object-cover border-4 border-indigo-200 hover:scale-105 transition-all duration-300 bg-white" />
+          <img src="images/image.jpeg" alt="Photo de Laije Belthassar" 
+            class="profile-photo mx-auto rounded-full border-4 border-yellow-400 shadow-lg w-56 h-56 md:w-72 md:h-72 object-cover bg-white transition-all duration-300 hover:scale-105 hover:border-indigo-600"
+            style="max-width:100%; height:auto; min-width:120px; min-height:120px;" />
+          <!--
+            - w-56 h-56 (224px) sur mobile, md:w-72 md:h-72 (288px) sur desktop
+            - rounded-full pour un cercle parfait
+            - border-4 border-yellow-400 pour une bordure moderne
+            - shadow-lg pour le relief
+            - hover:scale-105 et hover:border-indigo-600 pour l'effet au survol
+            - Responsive : max-width:100%, min-width/min-height pour éviter l'écrasement
+          -->
         </div>
         <div class="col-12 col-md-7 about-text font-sans text-lg text-gray-700 space-y-4">
           <h2 class="text-2xl font-bold text-indigo-700 mb-4">À propos de moi</h2>
-          <p>Je suis <span class="font-semibold text-indigo-600">Laije Belthassar</span>, analyste de données junior autodidacte, passionné par la transformation des données brutes en <span class="font-semibold text-indigo-600 hover:underline cursor-pointer">insights actionnables</span>.<br>Bien que nouveau dans le domaine de l'<span class="font-semibold text-indigo-600 hover:underline cursor-pointer">analyse de données</span>, j'apporte une solide <span class="font-semibold text-indigo-600 hover:underline cursor-pointer">maîtrise d'Excel</span> et une expérience en <span class="font-semibold text-indigo-600 hover:underline cursor-pointer">développement front-end</span> qui enrichissent mon approche analytique.</p>
-          <p>J'ai suivi une formation autodidacte en analyse de données, développant une expertise avancée avec <span class="font-semibold text-indigo-600 hover:underline cursor-pointer">Microsoft Excel</span> (<span class="font-semibold text-indigo-600 hover:underline cursor-pointer">tableaux croisés dynamiques</span>, <span class="font-semibold text-indigo-600 hover:underline cursor-pointer">Power Query</span>, <span class="font-semibold text-indigo-600 hover:underline cursor-pointer">VBA</span>). Mes compétences en développement front-end sont également un atout précieux pour la visualisation et la communication des données.</p>
-          <p>Je possède une bonne maîtrise des fondamentaux de <span class="font-semibold text-indigo-600 hover:underline cursor-pointer">Power BI</span> et je m'adapte rapidement aux nouveaux outils et technologies.</p>
-          <p>Ce qui me distingue, c’est mon approche méthodique de résolution de problèmes, ma capacité à traduire des données complexes en visualisations claires, ma curiosité intellectuelle constante, et ma forte éthique de travail.</p>
-          <p class="italic border-l-4 border-yellow-400 pl-4 bg-yellow-50/60 rounded-md">Je suis actuellement à la recherche d’opportunités me permettant d’appliquer mes compétences en <span class="font-semibold text-indigo-600 hover:underline cursor-pointer">analyse de données</span> tout en continuant à développer mon expertise dans ce domaine passionnant.</p>
+          <p>Je suis <span class="font-semibold text-indigo-600">Laije Belthassar BALONG</span>, analyste de données junior et entrepreneur, passionné de numerique, curieux de nature, toujours en quete d'apprentissage et de nouveaux defis. j'aime comprendre comment les choses fonctionnent, resoudre des problemes, et creer des solutions simples, utiles et efficaces.<br>Bien que nouveau et debutant dans le domaine de l'<span class="font-semibold text-indigo-600 hover:underline cursor-pointer">analyse de données</span>, j'apporte une solide <span class="font-semibold text-indigo-600 hover:underline cursor-pointer">maîtrise d'Excel</span> et une expérience en <span class="font-semibold text-indigo-600 hover:underline cursor-pointer">développement front-end</span> qui enrichissent mon approche analytique.</p>
+          <p><span class="font-semibold text-indigo-600 hover:underline cursor-pointer">Autodidacte</span> dans plusieurs domaines, j'ai developpé mes competences à force de pratique, d'experimentation et de passion. developpant une bonne connaissance de l'outil <span class="font-semibold text-indigo-600 hover:underline cursor-pointer">Microsoft Excel (tableaux croisés dynamiques, Visualisation de données)</span>. Mes compétences en développement front-end sont également un atout précieux et temoigne de ma polyvalence technique ainsi que de ma capacité à comprendre les outils numeriques dans leur ensemble. </p>
+          <p>Je possède une bonne maîtrise des fondamentaux de <span class="font-semibold text-indigo-600 hover:underline cursor-pointer">Power BI</span> et je suis egalement tres à l'aise avec les outils numeriques, logiciels informatiques et les outils collaboratives (Google Workspace; Microsoft 365).</p>
+          <p class="italic border-l-4 border-yellow-400 pl-4 bg-yellow-50/60 rounded-md">Je suis actuellement à la recherche d’opportunités pour mettre à contribution mes competences et apprendre encore d'avantage pour mieux affiner mes competences ainsi que mes connaissances.</p>
         </div>
       </div>
     </div>
@@ -81,51 +90,55 @@
     <div class="container">
       <h2 class="text-2xl font-bold text-indigo-700 mb-8 text-center"><i class="fa-solid fa-lightbulb me-2"></i>Mon expertise</h2>
       <div class="row g-4 justify-content-center">
-        <!-- Catégorie Excel -->
+        <!-- Catégorie Analyse & Tableurs -->
         <div class="col-12 col-md-6 col-lg-3">
           <div class="bg-indigo-50 rounded-xl p-6 shadow hover:shadow-lg transition group">
-            <h3 class="text-indigo-700 font-semibold mb-4 flex items-center gap-2"><i class="fa-solid fa-table"></i> Excel</h3>
+            <h3 class="text-indigo-700 font-semibold mb-4 flex items-center gap-2"><i class="fa-solid fa-table"></i> Analyse & Tableurs</h3>
             <div class="flex flex-col gap-3">
-              <div class="skill-badge flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow hover:bg-indigo-100 transition cursor-pointer" tabindex="0" data-skill="Excel Avancé">
+              <div class="skill-badge flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow hover:bg-indigo-100 transition cursor-pointer relative group" tabindex="0" data-skill="Excel Avancé">
                 <i class="fa-solid fa-file-excel text-green-600"></i>
-                <span class="font-semibold">Excel (Avancé)</span>
-                <div class="skill-tooltip absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-gray-900 text-white text-sm rounded-lg px-4 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none">Tableaux croisés dynamiques, formules avancées, automatisation, reporting</div>
+                <span class="font-semibold">Excel</span>
+                <span class="badge-niveau absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-indigo-700 text-white text-xs rounded px-3 py-1 shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-90 group-hover:scale-100">Avancé</span>
+                <div class="skill-tooltip absolute left-full top-full mt-2 ml-2 bg-gray-900 text-white text-sm rounded-lg px-4 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none">Tableaux croisés dynamiques, formules avancées, automatisation, reporting</div>
+              </div>
+              <div class="skill-badge flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow hover:bg-indigo-100 transition cursor-pointer relative group" tabindex="0" data-skill="Google Sheets Intermédiaire">
+                <i class="fa-brands fa-google text-green-500"></i>
+                <span class="font-semibold">Google Sheets</span>
+                <span class="badge-niveau absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-indigo-700 text-white text-xs rounded px-3 py-1 shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-90 group-hover:scale-100">Intermédiaire</span>
+                <div class="skill-tooltip absolute left-full top-full mt-2 ml-2 bg-gray-900 text-white text-sm rounded-lg px-4 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none">Formules, automatisation, collaboration</div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Catégorie Data Viz -->
+
+        <!-- Catégorie Programmation -->
         <div class="col-12 col-md-6 col-lg-3">
           <div class="bg-indigo-50 rounded-xl p-6 shadow hover:shadow-lg transition group">
-            <h3 class="text-indigo-700 font-semibold mb-4 flex items-center gap-2"><i class="fa-solid fa-chart-bar"></i> Data Visualization</h3>
+            <h3 class="text-indigo-700 font-semibold mb-4 flex items-center gap-2"><i class="fa-solid fa-code"></i> Programmation</h3>
             <div class="flex flex-col gap-3">
-              <div class="skill-badge flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow hover:bg-indigo-100 transition cursor-pointer" tabindex="0" data-skill="Power BI">
-                <i class="fa-solid fa-chart-pie text-yellow-500"></i>
-                <span class="font-semibold">Power BI</span>
-                <div class="skill-tooltip absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-gray-900 text-white text-sm rounded-lg px-4 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none">Création de dashboards interactifs, DAX, rapports dynamiques</div>
+              <div class="skill-badge flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow hover:bg-indigo-100 transition cursor-pointer relative group" tabindex="0" data-skill="Python Débutant">
+                <i class="fa-brands fa-python text-yellow-600"></i>
+                <span class="font-semibold">Python</span>
+                <span class="badge-niveau absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-indigo-700 text-white text-xs rounded px-3 py-1 shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-90 group-hover:scale-100">Débutant</span>
+                <div class="skill-tooltip absolute left-full top-full mt-2 ml-2 bg-gray-900 text-white text-sm rounded-lg px-4 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none">Scripts, automatisation, analyse de données</div>
               </div>
-              <div class="skill-badge flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow hover:bg-indigo-100 transition cursor-pointer" tabindex="0" data-skill="Tableau">
-                <i class="fa-solid fa-chart-area text-indigo-400"></i>
-                <span class="font-semibold">Tableau</span>
-                <div class="skill-tooltip absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-gray-900 text-white text-sm rounded-lg px-4 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none">Visualisation avancée, storytelling, analyses interactives</div>
+              <div class="skill-badge flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow hover:bg-indigo-100 transition cursor-pointer relative group" tabindex="0" data-skill="R Débutant">
+                <i class="fa-brands fa-r-project text-blue-500"></i>
+                <span class="font-semibold">R</span>
+                <span class="badge-niveau absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-indigo-700 text-white text-xs rounded px-3 py-1 shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-90 group-hover:scale-100">Débutant</span>
+                <div class="skill-tooltip absolute left-full top-full mt-2 ml-2 bg-gray-900 text-white text-sm rounded-lg px-4 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none">Statistiques, visualisation, scripts</div>
               </div>
-            </div>
-          </div>
-        </div>
-        <!-- Catégorie Front-end -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="bg-indigo-50 rounded-xl p-6 shadow hover:shadow-lg transition group">
-            <h3 class="text-indigo-700 font-semibold mb-4 flex items-center gap-2"><i class="fa-solid fa-code"></i> Front-end</h3>
-            <div class="flex flex-col gap-3">
-              <div class="skill-badge flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow hover:bg-indigo-100 transition cursor-pointer" tabindex="0" data-skill="HTML/CSS">
+              <div class="skill-badge flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow hover:bg-indigo-100 transition cursor-pointer relative group" tabindex="0" data-skill="HTML/CSS Avancé">
                 <i class="fa-brands fa-html5 text-orange-500"></i>
                 <span class="font-semibold">HTML/CSS</span>
-                <div class="skill-tooltip absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-gray-900 text-white text-sm rounded-lg px-4 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none">Structuration, design responsive, accessibilité</div>
+                <span class="badge-niveau absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-indigo-700 text-white text-xs rounded px-3 py-1 shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-90 group-hover:scale-100">Avancé</span>
+                <div class="skill-tooltip absolute left-full top-full mt-2 ml-2 bg-gray-900 text-white text-sm rounded-lg px-4 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none">Structuration, design responsive, accessibilité</div>
               </div>
-              <div class="skill-badge flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow hover:bg-indigo-100 transition cursor-pointer" tabindex="0" data-skill="JavaScript">
+              <div class="skill-badge flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow hover:bg-indigo-100 transition cursor-pointer relative group" tabindex="0" data-skill="JavaScript Intermédiaire">
                 <i class="fa-brands fa-js text-yellow-400"></i>
                 <span class="font-semibold">JavaScript</span>
-                <div class="skill-tooltip absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-gray-900 text-white text-sm rounded-lg px-4 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none">Interactions dynamiques, DOM, animations</div>
+                <span class="badge-niveau absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-indigo-700 text-white text-xs rounded px-3 py-1 shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-90 group-hover:scale-100">Intermédiaire</span>
+                <div class="skill-tooltip absolute left-full top-full mt-2 ml-2 bg-gray-900 text-white text-sm rounded-lg px-4 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none">Interactions dynamiques, DOM, animations</div>
               </div>
             </div>
           </div>
@@ -135,15 +148,43 @@
           <div class="bg-indigo-50 rounded-xl p-6 shadow hover:shadow-lg transition group">
             <h3 class="text-indigo-700 font-semibold mb-4 flex items-center gap-2"><i class="fa-solid fa-toolbox"></i> Outils numériques</h3>
             <div class="flex flex-col gap-3">
-              <div class="skill-badge flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow hover:bg-indigo-100 transition cursor-pointer" tabindex="0" data-skill="Google Sheets">
-                <i class="fa-brands fa-google text-green-500"></i>
-                <span class="font-semibold">Google Sheets</span>
-                <div class="skill-tooltip absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-gray-900 text-white text-sm rounded-lg px-4 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none">Formules, automatisation, collaboration</div>
+              <div class="skill-badge flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow hover:bg-indigo-100 transition cursor-pointer relative group" tabindex="0" data-skill="Google Workspace Intermédiaire">
+                <i class="fa-brands fa-google text-red-500"></i>
+                <span class="font-semibold">Google Workspace</span>
+                <span class="badge-niveau absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-indigo-700 text-white text-xs rounded px-3 py-1 shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-90 group-hover:scale-100">Intermédiaire</span>
+                <div class="skill-tooltip absolute left-full top-full mt-2 ml-2 bg-gray-900 text-white text-sm rounded-lg px-4 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none">Docs, Drive, Slides, collaboration</div>
               </div>
-              <div class="skill-badge flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow hover:bg-indigo-100 transition cursor-pointer" tabindex="0" data-skill="Notion">
+              <div class="skill-badge flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow hover:bg-indigo-100 transition cursor-pointer relative group" tabindex="0" data-skill="Microsoft 365 Intermédiaire">
+                <i class="fa-brands fa-microsoft text-blue-700"></i>
+                <span class="font-semibold">Microsoft 365</span>
+                <span class="badge-niveau absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-indigo-700 text-white text-xs rounded px-3 py-1 shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-90 group-hover:scale-100">Intermédiaire</span>
+                <div class="skill-tooltip absolute left-full top-full mt-2 ml-2 bg-gray-900 text-white text-sm rounded-lg px-4 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none">Teams, Outlook, OneDrive, Word, PowerPoint</div>
+              </div>
+              <div class="skill-badge flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow hover:bg-indigo-100 transition cursor-pointer relative group" tabindex="0" data-skill="Notion Intermédiaire">
                 <i class="fa-solid fa-book text-indigo-700"></i>
                 <span class="font-semibold">Notion</span>
-                <div class="skill-tooltip absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-gray-900 text-white text-sm rounded-lg px-4 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none">Gestion de projet, organisation, bases de données</div>
+                <span class="badge-niveau absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-indigo-700 text-white text-xs rounded px-3 py-1 shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-90 group-hover:scale-100">Intermédiaire</span>
+                <div class="skill-tooltip absolute left-full top-full mt-2 ml-2 bg-gray-900 text-white text-sm rounded-lg px-4 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none">Gestion de projet, organisation, bases de données</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Catégorie Soft Skills -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="bg-indigo-50 rounded-xl p-6 shadow hover:shadow-lg transition group">
+            <h3 class="text-indigo-700 font-semibold mb-4 flex items-center gap-2"><i class="fa-solid fa-people-group"></i> Soft Skills</h3>
+            <div class="flex flex-col gap-3">
+              <div class="skill-badge flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow hover:bg-indigo-100 transition cursor-pointer relative group" tabindex="0" data-skill="Communication Avancé">
+                <i class="fa-solid fa-comments text-yellow-600"></i>
+                <span class="font-semibold">Travail d'equipe</span>
+                <span class="badge-niveau absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-indigo-700 text-white text-xs rounded px-3 py-1 shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-90 group-hover:scale-100">Avancé</span>
+                <div class="skill-tooltip absolute left-full top-full mt-2 ml-2 bg-gray-900 text-white text-sm rounded-lg px-4 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none">Clarté, pédagogie, vulgarisation</div>
+              </div>
+              <div class="skill-badge flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow hover:bg-indigo-100 transition cursor-pointer relative group" tabindex="0" data-skill="Collaboration Avancé">
+                <i class="fa-solid fa-handshake-angle text-green-700"></i>
+                <span class="font-semibold">Collaboration</span>
+                <span class="badge-niveau absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-indigo-700 text-white text-xs rounded px-3 py-1 shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-90 group-hover:scale-100">Avancé</span>
+                <div class="skill-tooltip absolute left-full top-full mt-2 ml-2 bg-gray-900 text-white text-sm rounded-lg px-4 py-2 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none">Travail d'équipe, gestion de projet, adaptabilité</div>
               </div>
             </div>
           </div>
@@ -155,32 +196,51 @@
   <!-- SECTION CERTIFICATIONS -->
   <section id="certifications" class="py-12 px-4 lg:px-20 bg-white/90 animate-fade-in">
     <div class="container">
-      <h2 class="text-2xl font-bold text-indigo-700 mb-8 text-center"><i class="fa-solid fa-award me-2"></i>Certifications</h2>
+      <h2 class="text-2xl font-bold text-indigo-700 mb-8 text-center flex items-center justify-center gap-2">
+        <span class="text-3xl">📜</span>Certifications
+      </h2>
       <div class="row g-4 justify-content-center">
-        <div class="col-12 col-md-4">
-          <div class="bg-white rounded-xl shadow p-6 flex items-center gap-4 hover:shadow-lg transition">
-            <div class="text-3xl text-yellow-400"><i class="fa-solid fa-certificate"></i></div>
-            <div>
-              <div class="font-semibold text-gray-800">Google Data Analytics Professional Certificate</div>
-              <div class="text-indigo-600 text-sm">Coursera</div>
+        <!-- Certification 1 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center gap-3 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+            <img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/apple-touch-icon-76x76.png" alt="Coursera" class="h-10 w-10 mb-2 opacity-80 group-hover:opacity-100 transition object-contain" loading="lazy" />
+            <div class="font-semibold text-gray-800 text-center">Principes fondamentaux d’Excel pour l’analyse des données</div>
+            <div class="flex items-center gap-2 mt-2">
+              <span class="inline-block bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded-full"><i class="fa-solid fa-certificate me-1"></i>Certifié</span>
+              <span class="text-indigo-600 text-xs font-semibold">Coursera</span>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-4">
-          <div class="bg-white rounded-xl shadow p-6 flex items-center gap-4 hover:shadow-lg transition">
-            <div class="text-3xl text-yellow-400"><i class="fa-solid fa-certificate"></i></div>
-            <div>
-              <div class="font-semibold text-gray-800">Excel Avancé</div>
-              <div class="text-indigo-600 text-sm">OpenClassrooms</div>
+        <!-- Certification 2 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center gap-3 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+            <img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/apple-touch-icon-76x76.png" alt="Coursera" class="h-10 w-10 mb-2 opacity-80 group-hover:opacity-100 transition object-contain" loading="lazy" />
+            <div class="font-semibold text-gray-800 text-center">Introduction à l'analyse de données à l'aide de Microsoft Excel</div>
+            <div class="flex items-center gap-2 mt-2">
+              <span class="inline-block bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded-full"><i class="fa-solid fa-certificate me-1"></i>Certifié</span>
+              <span class="text-indigo-600 text-xs font-semibold">Coursera</span>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-4">
-          <div class="bg-white rounded-xl shadow p-6 flex items-center gap-4 hover:shadow-lg transition">
-            <div class="text-3xl text-yellow-400"><i class="fa-solid fa-certificate"></i></div>
-            <div>
-              <div class="font-semibold text-gray-800">Power BI Data Analyst Associate</div>
-              <div class="text-indigo-600 text-sm">Microsoft</div>
+        <!-- Certification 3 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center gap-3 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+            <img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/apple-touch-icon-76x76.png" alt="Coursera" class="h-10 w-10 mb-2 opacity-80 group-hover:opacity-100 transition object-contain" loading="lazy" />
+            <div class="font-semibold text-gray-800 text-center">Compétences mathématiques de science des données</div>
+            <div class="flex items-center gap-2 mt-2">
+              <span class="inline-block bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded-full"><i class="fa-solid fa-certificate me-1"></i>Certifié</span>
+              <span class="text-indigo-600 text-xs font-semibold">Coursera</span>
+            </div>
+          </div>
+        </div>
+        <!-- Certification 4 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center gap-3 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="h-14 w-14 mb-2 opacity-80 group-hover:opacity-100 transition object-contain" loading="lazy" />
+            <div class="font-semibold text-gray-800 text-center">Principes fondamentaux : des Données... des Données, Partout</div>
+            <div class="flex items-center gap-2 mt-2">
+              <span class="inline-block bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded-full"><i class="fa-solid fa-certificate me-1"></i>Certifié</span>
+              <span class="text-indigo-600 text-xs font-semibold">Coursera / Google</span>
             </div>
           </div>
         </div>
@@ -194,7 +254,7 @@
       <h2 class="text-2xl font-bold text-indigo-700 mb-8 text-center"><i class="fa-solid fa-envelope me-2"></i>Contact</h2>
       <div class="row g-4 justify-content-center">
         <div class="col-12 col-md-6">
-          <form class="bg-white rounded-xl shadow p-6 flex flex-col gap-4" action="https://formsubmit.co/laijebalong@gmail.com" method="POST">
+          <form class="bg-white rounded-xl shadow p-6 flex flex-col gap-4" action="https://formspree.io/f/mdkgyvry" method="POST">
             <div>
               <label for="name" class="block font-semibold text-gray-700 mb-1"><i class="fa-solid fa-user me-2"></i>Nom</label>
               <input type="text" id="name" name="name" required placeholder="Votre nom" class="form-control rounded-lg border-indigo-200 focus:ring-2 focus:ring-indigo-400" />
@@ -208,6 +268,9 @@
               <textarea id="message" name="message" rows="6" required placeholder="Votre message" class="form-control rounded-lg border-indigo-200 focus:ring-2 focus:ring-indigo-400"></textarea>
             </div>
             <button type="submit" class="bg-yellow-400 text-indigo-900 font-bold rounded-full px-6 py-2 shadow hover:bg-indigo-700 hover:text-white transition self-end"><i class="fa-solid fa-paper-plane me-2"></i>Envoyer</button>
+            <a href="https://drive.google.com/file/d/1-OpybX2ZL6vz3-UGPX97gZMpuSFuLgXf/view?usp=sharing" target="_blank" rel="noopener" class="mt-2 inline-flex items-center gap-2 bg-indigo-700 text-yellow-200 font-bold rounded-full px-6 py-2 shadow hover:bg-yellow-400 hover:text-indigo-900 transition w-full justify-center">
+              <i class="fa-solid fa-download"></i>📄 Télécharger mon CV
+            </a>
           </form>
         </div>
         <div class="col-12 col-md-4 flex flex-col gap-4 justify-center">
@@ -217,11 +280,11 @@
           </div>
           <div class="flex items-center gap-3 text-lg">
             <i class="fa-brands fa-whatsapp text-green-500"></i>
-            <a href="https://wa.me/2250700000000" target="_blank" class="text-indigo-700 hover:underline">WhatsApp</a>
+            <a href="https://wa.me/00242069212360" target="_blank" class="text-indigo-700 hover:underline">WhatsApp</a>
           </div>
           <div class="flex items-center gap-3 text-lg">
             <i class="fa-brands fa-linkedin text-blue-600"></i>
-            <a href="https://www.linkedin.com/in/votreprofil" target="_blank" class="text-indigo-700 hover:underline">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/laije-belthassar-balong" target="_blank" class="text-indigo-700 hover:underline">LinkedIn</a>
           </div>
         </div>
       </div>
