@@ -1,0 +1,134 @@
+/* =========================
+   main.css
+   Styles globaux et variables
+   ========================= */
+:root {
+  --color-primary: #0A1128;
+  --color-secondary: #1282A2;
+  --color-accent: #FFC857;
+  --color-light: #F2F2F2;
+  --color-dark: #333333;
+  --color-bg-pattern: #1B263B;
+  --border-radius: 1.2rem;
+  --transition: 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background: var(--color-primary);
+  color: var(--color-light);
+}
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  background: var(--color-primary);
+  color: var(--color-light);
+  min-height: 100vh;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-accent);
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  margin-top: 0;
+}
+
+section {
+  padding: 4rem 0 3rem 0;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover, a:focus {
+  color: var(--color-secondary);
+}
+
+.cta-button-centered {
+  background: var(--color-accent);
+  color: var(--color-dark);
+  border: none;
+  border-radius: 2rem;
+  padding: 0.8rem 2.2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(20,20,20,0.08);
+  transition: background var(--transition), color var(--transition), transform var(--transition);
+}
+.cta-button-centered:hover, .cta-button-centered:focus {
+  background: var(--color-secondary);
+  color: var(--color-light);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.theme-light {
+  background: var(--color-primary);
+  color: var(--color-light);
+}
+.theme-dark {
+  background: var(--color-dark);
+  color: var(--color-light);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--color-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: 8px;
+}
+
+/* Bordures stylisées africaines (voir african-patterns.css pour les motifs) */
+
+/* ...autres styles globaux... */
+
+/* Centrage des éléments principaux */
+.centered-section, .container-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-container, .skills-categories, .certifications-list, .contact-content {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+/* Centrage des éléments dans la navigation */
+.nav-anchored ul {
+  justify-content: center;
+}
+
+/* Centrage du formulaire de contact et infos */
+.contact-content {
+  align-items: center;
+}
+
+/* Centrage du footer */
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

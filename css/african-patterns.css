@@ -1,0 +1,48 @@
+/* =========================
+   african-patterns.css
+   Motifs africains modernes en fond
+   ========================= */
+.african-pattern-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.13;
+  background:
+    repeating-linear-gradient(135deg, #1282A2 0 8px, transparent 8px 24px),
+    repeating-linear-gradient(-45deg, #FFC857 0 6px, transparent 6px 22px),
+    url('../assets/pattern-kente.svg') center/cover no-repeat;
+}
+
+/* Motifs géométriques par section (exemple) */
+.hero-section-centered {
+  border-bottom: 12px solid #FFC857;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  background-blend-mode: overlay;
+}
+
+.about-section {
+  background: linear-gradient(120deg, #0A1128 80%, #1282A2 100%);
+  border-left: 8px solid #FFC857;
+  border-radius: 0 2.5rem 2.5rem 0;
+}
+
+.skills-section {
+  background: linear-gradient(100deg, #0A1128 90%, #1282A2 100%);
+  border-right: 8px solid #FFC857;
+  border-radius: 2.5rem 0 0 2.5rem;
+}
+
+.certifications {
+  background: linear-gradient(120deg, #0A1128 80%, #1282A2 100%);
+  border-left: 8px solid #FFC857;
+  border-radius: 0 2.5rem 2.5rem 0;
+}
+
+.contact-section {
+  background: linear-gradient(100deg, #0A1128 90%, #1282A2 100%);
+  border-right: 8px solid #FFC857;
+  border-radius: 2.5rem 0 0 2.5rem;
+}
+
+/* ...autres motifs ou décorations... */

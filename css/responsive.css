@@ -1,0 +1,101 @@
+/* =========================
+   responsive.css
+   Media queries et responsive design
+   ========================= */
+
+/* Mobile-first : tout est déjà adapté pour mobile de base */
+
+@media (max-width: 1200px) {
+  .about-container, .contact-content {
+    max-width: 900px;
+  }
+  .skills-categories {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-container, .contact-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+  .about-photo {
+    justify-content: flex-start;
+    margin-bottom: 1.2rem;
+  }
+  .skills-categories {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-anchored ul {
+    gap: 1.1rem;
+  }
+  .about-photo img {
+    width: 120px;
+    height: 120px;
+  }
+  .skills-category {
+    min-width: 160px;
+    padding: 1rem 0.7rem;
+  }
+  .certifications-list {
+    gap: 1rem;
+  }
+  .contact-form {
+    padding: 1.2rem 0.7rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-anchored {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+  }
+  .nav-anchored ul {
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+    margin-bottom: 0.7rem;
+  }
+  .theme-toggle-centered {
+    align-self: flex-end;
+    margin: 0 0 0.5rem 0;
+  }
+  .about-photo img {
+    width: 90px;
+    height: 90px;
+  }
+  .skills-category {
+    min-width: 120px;
+    padding: 0.7rem 0.3rem;
+  }
+  .footer {
+    font-size: 0.92rem;
+    padding: 0.7rem 0;
+  }
+}
+
+/* Menu hamburger (à compléter en JS) */
+@media (max-width: 768px) {
+  .nav-anchored ul {
+    display: none;
+  }
+  .nav-anchored.menu-open ul {
+    display: flex;
+    flex-direction: column;
+    background: rgba(10,17,40,0.98);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    box-shadow: 0 2px 16px rgba(20,20,20,0.08);
+    z-index: 200;
+  }
+}
+
+/* ...autres media queries... */

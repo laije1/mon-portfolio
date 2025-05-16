@@ -1,0 +1,70 @@
+/* style.css - Personnalisation minimale pour le portfolio Laije Belthassar
+   Utilise Bootstrap 5 pour la grille/layout et Tailwind CSS pour le style visuel.
+   Ajoute ici uniquement les styles spécifiques non gérés par Bootstrap/Tailwind. */
+
+/* Motif africain SVG en fond général */
+.african-pattern-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.10;
+  background:
+    repeating-linear-gradient(135deg, #1282A2 0 8px, transparent 8px 24px),
+    repeating-linear-gradient(-45deg, #FFC857 0 6px, transparent 6px 22px);
+}
+
+/* Animation fade-in personnalisée si besoin */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: none; }
+}
+.animate-fade-in {
+  animation: fade-in 1s cubic-bezier(.4,0,.2,1) both;
+}
+
+/* Pour la navigation sticky custom */
+.nav-anchored {
+  z-index: 50;
+}
+
+/* Pour la section à propos, motif SVG en fond */
+.about-section .about-bg-pattern {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Pour la photo de profil (effet glow au hover) */
+.profile-photo {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.profile-photo:hover, .profile-photo:focus {
+  transform: scale(1.05);
+  box-shadow: 0 8px 32px rgba(18,130,162,0.18);
+}
+
+/* Pour les tooltips compétences (si besoin) */
+.skill-tooltip {
+  z-index: 50;
+}
+
+/* Responsive fix pour la navigation mobile si besoin */
+@media (max-width: 768px) {
+  .nav-anchored ul {
+    flex-direction: column;
+    gap: 0.7rem;
+    background: rgba(10,17,40,0.98);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    box-shadow: 0 2px 16px rgba(20,20,20,0.08);
+    z-index: 200;
+    display: none;
+  }
+  .nav-anchored.menu-open ul {
+    display: flex;
+  }
+}
